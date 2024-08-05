@@ -18,9 +18,9 @@ function Home() {
         <div className="w-full md:w-1/2 xl:w-1/3 p-4" data-aos="fade-right">
           <h2 className="text-xl lg:text-2xl font-bold mb-4">Recent Projects</h2>
           <ul>
-            <li className="mb-2"><a href="#" className="text-base lg:text-lg">Project 1</a></li>
-            <li className="mb-2"><a href="#" className="text-base lg:text-lg">Project 2</a></li>
-            <li className="mb-2"><a href="#" className="text-base lg:text-lg">Project 3</a></li>
+            <li className="mb-2"><a href="#" className="text-base lg:text-lg">PyTorch Image classifier</a></li>
+            <li className="mb-2"><a href="#" className="text-base lg:text-lg">Sign Language classifier using Mediapipe</a></li>
+            <li className="mb-2"><a href="#" className="text-base lg:text-lg">Library Management (MERN)</a></li>
           </ul>
         </div>
         <div className="w-full md:w-1/2 xl:w-1/3 p-4" data-aos="fade-up" data-aos-delay="200">
