@@ -7,7 +7,7 @@ function About() {
       <div className="flex flex-wrap -mx-4">
         <div className="w-full md:w-1/2 xl:w-1/3 p-4" data-aos="fade-right">
           <img
-            src="src\assets\profilepic.jpg"
+            src="https://i.postimg.cc/fTH29n5X/profilepic.jpg"
             alt="Aydin Adnan"
             className="rounded-full w-48 h-48 object-cover"
           />
