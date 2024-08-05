@@ -6,23 +6,25 @@ function Projects() {
       <h1 className="text-2xl lg:text-3xl font-bold mb-8" data-aos="fade-up">Projects</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
         {projects.map((project, index) => (
-          <div key={index} className="p-4 bg-white shadow-md rounded-lg" data-aos="fade-up" data-aos-delay={index * 200}>
-            <h2 className="text-xl lg:text-2xl font-bold mb-2">{project.title}</h2>
-            <p className="text-base lg:text-lg mb-4">{project.description}</p>
-            <div className="flex flex-wrap mb-4">
-              {project.technologies.map((tech, index) => (
-                <span key={index} className="bg-gray-200 text-gray-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">{tech}</span>
-              ))}
+          <div key={index} className="p-4 bg-white shadow-md rounded-lg flex flex-col justify-between" data-aos="fade-up" data-aos-delay={index * 200}>
+            <div>
+              <h2 className="text-xl lg:text-2xl font-bold mb-2">{project.title}</h2>
+              <p className="text-base lg:text-lg mb-4">{project.description}</p>
+              <div className="flex flex-wrap mb-4">
+                {project.technologies.map((tech, index) => (
+                  <span key={index} className="bg-gray-200 text-gray-800 text-xs font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded">{tech}</span>
+                ))}
+              </div>
             </div>
-            <div className="flex">
+            <div className="flex mt-auto">
               <a href={project.github} target="_blank" rel="noopener noreferrer" className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">
                 View on GitHub
               </a>
-              {project.live && (
+              {/* {project.live && (
                 <a href={project.live} target="_blank" rel="noopener noreferrer" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-4">
                   View Live
                 </a>
-              )}
+              )} */}
             </div>
           </div>
         ))}
@@ -33,25 +35,32 @@ function Projects() {
 
 const projects = [
   {
-    title: 'Project 1',
-    description: 'Description of project 1.',
-    technologies: ['Tech 1', 'Tech 2', 'Tech 3'],
-    github: 'https://github.com/your-username/project1',
-    live: 'https://your-project1-live-link.com',
+    title: 'Image Classifier',
+    description: 'Created an Image Classifier with PyTorch using the CIFAR-10 dataset',
+    technologies: ['Python', 'PyTorch'],
+    github: 'https://github.com/AydinAdnan/Image_Classification_PyTorch',
+    live: '#',
   },
   {
-    title: 'Project 2',
-    description: 'Description of project 2.',
-    technologies: ['Tech 1', 'Tech 2', 'Tech 3'],
-    github: 'https://github.com/your-username/project2',
-    live: 'https://your-project2-live-link.com',
+    title: 'Library Book Management',
+    description: 'Created using MERN stack',
+    technologies: ['React.js', 'Tailwind CSS', 'MongoDB','Express'],
+    github: 'https://github.com/AydinAdnan/library_management_mern',
+    live: '#',
   },
   {
-    title: 'Project 3',
-    description: 'Description of project 3.',
-    technologies: ['Tech 1', 'Tech 2', 'Tech 3'],
-    github: 'https://github.com/your-username/project3',
-    live: 'https://your-project3-live-link.com',
+    title: 'Movie Ticketing App',
+    description: 'Movie ticketing web app using PostgreSQL and React.js frontend (PERN stack)',
+    technologies: ['React.js', 'Tailwind CSS', 'PostgreSQL'],
+    github: 'https://github.com/AydinAdnan/Movie-Ticketing',
+    live: '#',
+  },
+  {
+    title: 'Sign Language Classifier',
+    description: 'A program that classify different sign language actions into letters using Mediapipe',
+    technologies: ['Python', 'sci-kit learn', 'OpenCV'],
+    github: 'https://github.com/AydinAdnan/signlanguage_classifier',
+    live: '#',
   },
 ];
 
